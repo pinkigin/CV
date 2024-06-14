@@ -1,38 +1,47 @@
 
+
+
+
  <!DOCTYPE html>
 <html>
 <head>
 <title>Gina Monteverde - Curriculum Vitae</title>
-
- <link rel="icon" href="https://img.freepik.com/vector-premium/diseno-logotipo-monograma-iniciales-gm-icono-negocios-plantilla-simple-elegante_619996-117.jpg" type="image/x-icon">
-  <link rel="shortcut icon" href="https://raw.githubusercontent.com/pinkigin/CV/ad38c6755b3113f406fbda2d60dbdbb7c3063b85/Profile24.jpeg" type="image/x-icon">
-
+<link rel="icon" href="https://img.freepik.com/vector-premium/diseno-logotipo-monograma-iniciales-gm-icono-negocios-plantilla-simple-elegante_619996-117.jpg" type="image/x-icon">
+<link rel="shortcut icon" href="https://raw.githubusercontent.com/pinkigin/CV/ad38c6755b3113f406fbda2d60dbdbb7c3063b85/Profile24.jpeg" type="image/x-icon">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
 
-/* My Skills */
+body {
+      background-color: navy; /* Set initial background color */
+    }
+.custom-section {
+    margin-bottom: 20px; /* Adjust this value for the space between sections */
+    border-radius: 15px; /* Adjust this value for the curvature of the edges */
+    overflow: hidden; /* Ensure content does not overflow the curved edges */
+    background-color: white; /* Set background color to match the background */
+    padding: 20px; /* Add padding for spacing inside each section */
+  }
 
-.progress {
-  height: 20px;
+
+html, body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Roboto", sans-serif; 
 }
-
+.progress {
+  height: 18px;
+}
 .progress .skill .val {
   float: right;
   font-style: normal;
-  margin: 0 20px 0 0;
+  margin: 0 24px 0 0;
 }
-
 span {
   display: block;
   position: relative;
@@ -40,249 +49,238 @@ span {
   font-weight: 600;
   text-transform: uppercase;
   color: #888888;
-  line-height: 17px;
-  margin-bottom: 5px;
+  line-height: 18px;
+  margin-bottom: 6px;
 }
-
 .progress-bar {
-  border-radius: 20px;
-  transition-duration: 3s;
+  border-radius: 18px;
+  transition-duration: 4s; /* Remove if you want to use keyframe animation */
+  animation: load 4s normal forwards; /* Add animation here */
 }
 
-
-
-.w3-card {
-  border-radius: 10px; /* Rounded corners for card containers */
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3); /* Add shadow */
+@keyframes load {
+  0% {
+    width: 0;
+  }
 }
+  .w3-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.0); /* Transparent white background */
+  }
+  .w3-table th, .w3-table td {
+    border: 1px solid rgba(0, 0, 0, 0.0); /* Transparent border */
+    padding: 8px;
+    text-align: left;
+  }
+  .w3-table th {
+    background-color: rgba(240, 240, 240, 0.0); /* Transparent light gray background for headers */
+  }
+
+
+
+
+
 
 </style>
+
 </head>
-<body class="w3-light-grey">
+<body class="w3">
 
 <!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
+<div class="w3-content; w3-margin-top" style="max-width:1400px;">
 
   <!-- The Grid -->
   <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    
 
+
+
+<!-- Left Column -->
 <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card">
-        <div class="w3-display-container">
-          <img src="https://raw.githubusercontent.com/pinkigin/CV/ad38c6755b3113f406fbda2d60dbdbb7c3063b85/Profile24.jpeg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2 style="color: teal;">Gina Monteverde</h2>
-          </div>
-        </div>
-      
+  <div class="w3-white w3-text-grey w3-card custom-section">
+      <img src="https://raw.githubusercontent.com/pinkigin/CV/ad38c6755b3113f406fbda2d60dbdbb7c3063b85/Profile24.jpeg" style="width:100%" alt="Avatar">
+    <div class="w3-display-container">
 
+      <div class="w3-display-bottomleft w3-container w3-text-black">
+        <h2 style="color:rgb(0,0,80);padding-left: 20px;">Gina Monteverde</h2>
+      </div>
+    </div>
+
+    <!-- About Me Section -->
     
-      <!-- About Me Section -->
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>About Me</h2>
+      <h2 class="w3-text-grey w3-padding-6"><i class="fa fa-user fa-fw w3-margin-right w3-xxlarge w3-text-dark-grey"></i>About Me</h2>
+      <hr>
+      <div class="w3-container">
+        <h3><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-dark-grey"></i>Data Scientist</h3>
+        <h3 style="padding-left: 29px;">Scientific Advisor</h3>
+        <h3 style="padding-left: 29px;">Project Manager</h3>
+        <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-dark-grey"></i>gmonteve@gmail.com</p>
+      </div>
+    
+</div>
+
+    <!-- Skills Section -->
+    <div class="w3-white w3-text-grey w3-card custom-section">
+    
+        <h2 class="w3-text-grey w3-padding-6"><i class="fa fa-cogs fa-fw w3-margin-right w3-xxlarge w3-text-dark-grey"></i>Skills</h2>
+        <hr>
         <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Data Scientist, Scientific Advisor and Project Manager</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>gmonteve@gmail.com</p>
-          <hr>
           <p>Tech-savvy scientist with a strong background in Science and Neurobiology, offering a versatile skill set including data analysis, project management, and customer service. Proficient in various software and platforms, with a passion for creative problem-solving and effective communication.</p>
-         
+          <p><i class="fa fa-users w3-margin-right w3-large w3-text-dark-grey"></i><b>Customer Relations:</b> Proficient in Hubstaff, Salesforce, Intercom, Zoho Desk, and CRM systems.</p>
+          <p><i class="fa fa-comments w3-margin-right w3-large w3-text-dark-grey"></i><b>Communication:</b> Strong attention to detail, effective written and verbal communication.</p>
+          <p><i class="fa fa-chart-line w3-margin-right w3-large w3-text-dark-grey"></i>Critical Thinking <i class="fa fa-heart w3-margin-right w3-large w3-text-dark-grey"></i>Empathy <i class="fa fa-handshake w3-margin-right w3-large w3-text-dark-grey"></i>Collaboration</p>
         </div>
-      </div>
-</div>
-
-
-
-      <!-- Skills-------------------------------------->
- <div class="w3-white w3-text-grey w3-card">
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-     
- 
-<br>
-          <h2 class="w3-text-grey w3-padding-6"><b><i class="fa fa-cogs fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Skills</b></h2>
-<hr>  
-    	<div class="w3-container">
- 	        
-
-          <p><i class="fa fa-users w3-margin-right w3-large w3-text-teal"></i><b>Customer Relations:</b> Proficient in Hubstaff, Salesforce, Intercom, Zoho Desk, and CRM systems.</p>
-          
-
- <!-- Communication -->
-
-
-<p><i class="fa fa-comments w3-margin-right w3-large w3-text-teal"></i><b>Communication:</b> Strong attention to detail, effective written and verbal communication.</p>
-	
-
- <!-- Soft -->
-
-
-<p><i class="fa fa-chart-line w3-margin-right w3-large w3-text-teal"></i>Critical Thinking  <i class="fa fa-heart w3-margin-right w3-large w3-text-teal"></i>Empathy  <i class="fa fa-handshake w3-margin-right w3-large w3-text-teal"></i>Collaboration</p>
-	
- <!-- Languages -->
-
-<p><i class="fa fa-globe w3-margin-right w3-large w3-text-teal"></i><b>Languages:</b></p>
-         <p> Spanish <span style="color: teal;"><i>Native/Bilingual</i></span> English <span style="color: teal;"><i>Native/Bilingual</i></span> French <i><span style="color: teal;">Limited Working Proficiency</i></span> 
-Beginner German.</p>
-          <br>
-	 </div>
-        </div>
-      </div>
-       
-
- <div class="w3-white w3-text-grey w3-card">
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-
-
-
-     <div class="row">
-            <div class="col-md-12 col-md-offset-6">
-
-<br>
-           
-		 <h2 class="w3-text-grey w3-padding-6"><b><i class="fa fa-laptop fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Technical Skills:</b></h2>
-
-
-            
-        <!-- Skill Bars -->
-                
-            
-           <span>HTML + CCS</span>     
-            <div class="progress skill-bar">
-                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%; background-color: teal;" >
-                    
-                </div>
-            </div>
-                <span>R</span>
-            <div class="progress skill-bar">
-                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background-color: teal;">    
-                </div>
-            </div>    
-            
-                <span>SQL</span>
-            <div class="progress skill-bar">
-                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%; background-color: teal;">
-                </div>
-            </div>              
-            
-                <span>Python</span>
-            <div class="progress skill-bar">
-                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 55%; background-color: teal;">
-                    
-                </div>
-            </div>  
-               
-                        
-                     
-                <span>GSuite and Microsoft Office</span>
-            <div class="progress skill-bar">
-                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%; background-color: teal;">
-                   
-                </div>
-	 </div>
- 
-          
-                <span> Canva, Zoom, Slack</span>
-            <div class="progress skill-bar">
-                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%; background-color: teal;"> 
-                </div> 
-              </div> 
-               
-
- 		<span> Adobe Acrobat (Photoshop, After Effects)</span>
-            <div class="progress skill-bar">
-                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 65%; background-color: teal;">
-                   
-                </div>
-
-
-
-
-
-            </div>    
   
-<br>              
+    </div>
 
-</div>  
-</div>    
-</div> 
+
+    <!-- Technical Skills Section -->
+    <div class="w3-white w3-text-grey w3-card custom-section">
+      <div class="w3-container">
+        <h2 class="w3-text-grey w3-padding-6"><i class="fa fa-laptop fa-fw w3-margin-right w3-xxlarge w3-text-dark-grey"></i>Technical Skills</h2>
+        <hr>
+        <div class="w3-container">
+          <!-- Skill Bars -->
+      <span>HTML + CSS</span>
+<div class="progress skill-bar">
+  <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%; background-color: rgb(0,0,120);"></div>
 </div>
 
+          <span>R</span>
+          <div class="progress skill-bar">
+            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%; background-color: rgb(0,0,130);"></div>
+          </div>
 
+          <span>SQL</span>
+          <div class="progress skill-bar">
+            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%; background-color: rgb(0,0,120);"></div>
+          </div>
 
-    <!-- End Left Column -->
- </div>
+          <span>Python</span>
+          <div class="progress skill-bar">
+            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 55%; background-color: rgb(0,0,110);"></div>
+          </div>
 
+          <span>GSuite and Microsoft Office</span>
+          <div class="progress skill-bar">
+            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%; background-color: rgb(0,0,100);"></div>
+          </div>
 
+          <span>Canva, Zoom, Slack</span>
+          <div class="progress skill-bar">
+            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%; background-color: rgb(0,0,90);"></div>
+          </div>
 
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>iink Payments - Payment Specialist (Customer Services Lead)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2023 - Present (1 year)</h6>
-          <p>Establishment of department OKRs and performance metrics.<br>Knowledge Base article creation and management. Training material and assessment creation.<br>Training new members on assisting clients with electronic endorsements, account setups, and insurance claim check payments while providing excellent customer service.<br>Collaborating with multiple stakeholders to ensure seamless transactions.<br>Documenting procedures and tasks on CRM platforms (HubSpot, Zoho Desk and CRM).</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Rho Business Banking, Location - Customer Service Representative</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2021 – Jan 2022</h6>
-          <p>Created FAQ documents and guides to streamline customer service processes.<br>Responded promptly to customer inquiries through various platforms, including Slack, AirCall, SalesForce, Front, Intercom, QuickBooks and Rho Admin Panel.<br>Monitored and proactively addressed card decline issues.<br>Effectively handled customer calls, emails, and chat messages.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Cimbras Hijan-CH BioMedical, Mexico - Project Leader and Scientific Advisor</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2020 – Feb 2022</h6>
-          <p>Led project initiatives for the development of the clinical department. Created compelling content and devised campaigns for digital marketing.<br>Designed and maintained web pages (https://en.biorganicsusa.com/, http://chbiomedical.net/).<br>Spearheaded projects involving the registration of in vitro diagnostic products with INDRE and COFEPRIS and provided clients comprehensive training in RT-PCR for SARS-CoV-19 detection.<br>Developed strategic plans for monitoring and diagnosing COVID-19 in companies, aligning with the new normal guidelines.<br>Assisted and followed up with clients, including Chedraui, Hérdez, and Cinépolis, with all service-related issues.</p><br>
-        </div>
-      </div>
-
-
-
-<!-- Edu ------------>
-
- <div class="w3-white w3-text-grey w3-card">
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>UNAM Instituto de Neurobiología, Querétaro - Master of Science (Neurobiology)</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2018</h6>
-          <p></p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>UNAM Facultad de Química - B.Sc. in Biological Pharmaceutical Chemistry</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2005 - 2012</h6>
-          <p></p>
-          <hr>
-        </div>
-      </div>
-   </div>
+          <span>Adobe Acrobat (Photoshop, After Effects)</span>
+          <div class="progress skill-bar">
+            <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width: 65%; background-color: rgb(0,0,80);"></div>
+          </div>
 <br>
-
-<!-- CErtif------------>
-
- <div class="w3-white w3-text-grey w3-card">
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Certificates</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>IBM - Data Science</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2018</h6>
-          <p></p>
-          <hr>
-      
+        </div>
       </div>
-   </div>
+    </div>
+
+  
+</div>
+<!-- End Left Column -->
 
 
-    <!-- End Right Column -->
+
+
+
+
+<!-- Right Column -->
+<div class="w3-twothird">
+
+  <div class="w3-container w3-card w3-white w3-margin-bottom custom-section">
+    <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-dark-grey"></i>Work Experience</h2>
+    <div class="w3-container">
+      <h5 class="w3-opacity"><b>iink Payments - Payment Specialist (Customer Services Lead)</b></h5>
+      <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Mar 2023 - Present (1 year)</h6>
+      <p>Establishment of department OKRs and performance metrics.<br>Knowledge Base article creation and management. Training material and assessment creation.<br>Training new members on assisting clients with electronic endorsements, account setups, and insurance claim check payments while providing excellent customer service.<br>Collaborating with multiple stakeholders to ensure seamless transactions.<br>Documenting procedures and tasks on CRM platforms (HubSpot, Zoho Desk and CRM).</p>
+      <hr>
+    </div>
+    <div class="w3-container">
+      <h5 class="w3-opacity"><b>Rho Business Banking, Location - Customer Service Representative</b></h5>
+      <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2021 – Jan 2022</h6>
+      <p>Created FAQ documents and guides to streamline customer service processes.<br>Responded promptly to customer inquiries through various platforms, including Slack, AirCall, SalesForce, Front, Intercom, QuickBooks and Rho Admin Panel.<br>Monitored and proactively addressed card decline issues.<br>Effectively handled customer calls, emails, and chat messages.</p>
+      <hr>
+    </div>
+    <div class="w3-container">
+      <h5 class="w3-opacity"><b>Cimbras Hijan-CH BioMedical, Mexico - Project Leader and Scientific Advisor</b></h5>
+      <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jul 2020 – Feb 2022</h6>
+      <p>Led project initiatives for the development of the clinical department. Created compelling content and devised campaigns for digital marketing.<br>Designed and maintained web pages (https://en.biorganicsusa.com/, http://chbiomedical.net/).<br>Spearheaded projects involving the registration of in vitro diagnostic products with INDRE and COFEPRIS and provided clients comprehensive training in RT-PCR for SARS-CoV-19 detection.<br>Developed strategic plans for monitoring and diagnosing COVID-19 in companies, aligning with the new normal guidelines.<br>Assisted and followed up with clients, including Chedraui, Hérdez, and Cinépolis, with all service-related issues.</p><br>
+    </div>
+  </div>
+
+  <!-- Edu ------------>
+  <div class="w3-white w3-text-grey w3-card custom-section">
+   
+      <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-graduation-cap fa-fw w3-margin-right w3-xxlarge w3-text-dark-grey"></i>Education</h2>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>UNAM Instituto de Neurobiología, Querétaro - Master of Science (Neurobiology)</b></h5>
+        <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016 - 2018</h6>
+        <p></p>
+        <hr>
+      </div>
+      <div class="w3-container">
+        <h5 class="w3-opacity"><b>UNAM Facultad de Química - B.Sc. in Biological Pharmaceutical Chemistry</b></h5>
+        <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2005 - 2012</h6>
+        <p></p>
+        <hr>
+      </div>
+  
+  </div>
+
+
+  <div class="w3-row">
+    <!-- Certificates Section -->
+    <div class="w3-col l6 s11">
+      <div class="w3-white w3-text-grey w3-card custom-section">
+        <h2 class="w3-text-grey w3-padding-8"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-dark-grey"></i>Certificates</h2>
+        <hr><br>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><a href="https://coursera.org/share/1fee3b5d7cf9ea916e66f76b32ce772e" target="_blank"><b>IBM - Data Science</b></a></h5>
+          <h6 class="w3-text-dark-grey"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Jun 2024</h6>
+          <p></p>
+        </div>
+
+      </div>
     </div>
     
+    <!-- Languages Section -->
+    <div class="w3-col l6 s11">
+      <div class="w3-white w3-text-grey w3-card custom-section" style="margin-left: 20px;">
+        <h2 class="w3-text-grey w3-padding-8"><i class="fa fa-globe fa-fw w3-margin-right w3-xxlarge w3-text-dark-grey"></i><b>Languages:</b></h2>
+        <hr>
+        <div class="w3-container">
+          <table class="w3-table2">
+            <tr>
+              <td><img src="https://cdn-icons-png.freepik.com/256/12360/12360721.png?semt=ais_hybrid" alt="Spanish Flag" style="width: 30px; vertical-align: middle;"> Spanish</td>
+              <td><i>Native/Bilingual</i></td>
+            </tr>
+            <tr>
+              <td><img src="https://uxwing.com/wp-content/themes/uxwing/download/flags-landmarks/united-states-flag-icon.png" alt="UK Flag" style="width: 30px; vertical-align: middle;"> English</td>
+              <td><i>Native/Bilingual</i></td>
+            </tr>
+            <tr>
+              <td><img src="https://cdn-icons-png.freepik.com/256/940/940188.png?semt=ais_hybrid" alt="French Flag" style="width: 30px; height:15px; vertical-align: middle;"> French</td>
+              <td><i>Limited Working Proficiency</i></td>
+            </tr>
+            <tr>
+              <td><img src="https://cdn-icons-png.flaticon.com/256/5988/5988791.png" alt="German Flag" style="width: 30px; vertical-align: middle;"> German</td>
+              <td><i>Beginner</i></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- End Right Column -->
+</div>
+
   <!-- End Grid -->
   </div>
 
@@ -297,12 +295,71 @@ Beginner German.</p>
 
 
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
+<footer class="w3-container w3-black w3-center w3-margin-top">
+
+  <br>
+
+  <p> Linked In <br>
+<a href="https://www.linkedin.com/in/gina-monteverde/" target="_blank"></a><i class="fa fa-linkedin w3-hover-opacity"> </i></p>
 
 <img src="https://web.archive.org/web/20090829013330im_/http://www.geocities.com/onecatmainecoon/psyo-n.gif" alt="gif"> 
 
 
-</footer>
 
+</footer>
+<script>
+// Get all document height
+var scrollHeight = Math.max(
+  document.body.scrollHeight, document.documentElement.scrollHeight,
+  document.body.offsetHeight, document.documentElement.offsetHeight,
+  document.body.clientHeight, document.documentElement.clientHeight
+);
+
+// Get viewport height
+var vHeight = document.documentElement.clientHeight;
+
+var stopPosition = scrollHeight - vHeight;
+
+// Convert window.pageYOffset, and stopPosition to return percentage value
+function getPercent(stopPos, curPos){
+  var percent = stopPos / 100;
+  var curPercent = curPos / percent;
+  return curPercent;
+}
+
+// Function to change color based on scroll percentage
+function getColorFromPercentage(percent) {
+  // Define RGB values for navy blue and dark grey
+  var navyBlue = { r: 0, g: 0, b: 120 }; // RGB values for navy blue
+  var darkGrey = { r: 10, g: 10, b: 10 }; // RGB values for dark grey
+
+  // Calculate interpolated RGB values based on the percentage
+  var r = navyBlue.r + Math.round((darkGrey.r - navyBlue.r) * percent / 100);
+  var g = navyBlue.g + Math.round((darkGrey.g - navyBlue.g) * percent / 100);
+  var b = navyBlue.b + Math.round((darkGrey.b - navyBlue.b) * percent / 100);
+
+  return `rgb(${r}, ${g}, ${b})`;
+}
+window.addEventListener('scroll', function() {
+  var curPosition = window.pageYOffset;
+  var percentScrolled = Math.round(getPercent(stopPosition, curPosition));
+  
+  // Log the current scroll position and percentage scrolled
+  console.log('Current Position:', curPosition);
+  console.log('Percent Scrolled:', percentScrolled);
+
+  // Update progress bars
+  var progressBars = document.querySelectorAll('.progress-value');
+  progressBars.forEach(function(bar) {
+    var targetWidth = bar.getAttribute('data-width');
+    var currentWidth = Math.min(targetWidth, percentScrolled) + '%';
+    bar.style.width = currentWidth;
+    bar.style.backgroundColor = getColorFromPercentage(percentScrolled);
+  });
+
+  // Update background color
+  document.body.style.backgroundColor = getColorFromPercentage(percentScrolled);
+});
+</script>
 </body>
 </html>
