@@ -77,7 +77,53 @@ span {
     background-color: rgba(240, 240, 240, 0.0); /* Transparent light gray background for headers */
   }
 
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translate3d(0, 100%, 0);
+      }
+      to {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+      }
+    }
 
+    .animate {
+      opacity: 0; /* Initially hide elements */
+      transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    }
+
+    .animated {
+      animation-name: fadeInUp;
+      animation-duration: 1.5s;
+      animation-fill-mode: forwards;
+    }
+
+    .custom-section {
+      margin-bottom: 20px; /* Adjust this value for the space between sections */
+      border-radius: 15px; /* Adjust this value for the curvature of the edges */
+      overflow: hidden; /* Ensure content does not overflow the curved edges */
+      background-color: white; /* Set background color to match the background */
+      padding: 20px; /* Add padding for spacing inside each section */
+    }
+
+
+
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
+    .delay-3 { animation-delay: 0.6s; }
+    .delay-4 { animation-delay: 0.8s; }
+    .delay-5 { animation-delay: 1s; }
+    .delay-6 { animation-delay: 1.2s; }
+    .delay-7 { animation-delay: 1.4s; }
+    .delay-8 { animation-delay: 1.6s; }
+    .delay-9 { animation-delay: 1.8s; }
+    .delay-10 { animation-delay: 2s; }
+
+    html, body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Roboto", sans-serif;
+    }
+</style>
 
 
 
@@ -96,7 +142,7 @@ span {
 
 
 <!-- Left Column -->
-<div class="w3-third">
+<div class="w3-third animate delay-1">
   <div class="w3-white w3-text-grey w3-card custom-section">
       <img src="https://raw.githubusercontent.com/pinkigin/CV/ad38c6755b3113f406fbda2d60dbdbb7c3063b85/Profile24.jpeg" style="width:100%" alt="Avatar">
     <div class="w3-display-container">
@@ -120,7 +166,7 @@ span {
 </div>
 
     <!-- Skills Section -->
-    <div class="w3-white w3-text-grey w3-card custom-section">
+    <div class="w3-white w3-text-grey w3-card custom-section animate delay-2">
     
         <h2 class="w3-text-grey w3-padding-6"><i class="fa fa-cogs fa-fw w3-margin-right w3-xxlarge w3-text-dark-grey"></i>Skills</h2>
         <hr>
@@ -135,7 +181,7 @@ span {
 
 
     <!-- Technical Skills Section -->
-    <div class="w3-white w3-text-grey w3-card custom-section">
+    <div class="w3-white w3-text-grey w3-card custom-section animate delay-3">
       <div class="w3-container">
         <h2 class="w3-text-grey w3-padding-6"><i class="fa fa-laptop fa-fw w3-margin-right w3-xxlarge w3-text-dark-grey"></i>Technical Skills</h2>
         <hr>
@@ -190,7 +236,7 @@ span {
 
 
 <!-- Right Column -->
-<div class="w3-twothird">
+<div class="w3-twothird animate delay-4">
 
   <div class="w3-container w3-card w3-white w3-margin-bottom custom-section">
     <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-dark-grey"></i>Work Experience</h2>
@@ -367,6 +413,36 @@ window.addEventListener('scroll', function() {
   // Update background color
   document.body.style.backgroundColor = getColorFromPercentage(percentScrolled);
 });
+
+
+
+  function toggleDarkMode() {
+    var body = document.body;
+    body.classList.toggle("dark-mode");
+    var newBackgroundColor = body.classList.contains("dark-mode") ? "black" : "white";
+    body.style.backgroundColor = newBackgroundColor;
+
+    var elements = document.querySelectorAll(".w3-white, .w3-text-grey");
+    elements.forEach(function(element) {
+      if (body.classList.contains("dark-mode")) {
+        element.style.backgroundColor = "black";
+        element.style.color = "white";
+      } else {
+        element.style.backgroundColor = "white";
+        element.style.color = "black";
+      }
+    });
+  }
+
+  // Animation
+  document.addEventListener("DOMContentLoaded", function() {
+    var elements = document.querySelectorAll('.animate');
+    elements.forEach(function(element) {
+      element.classList.add('animated');
+    });
+  });
 </script>
+
+
 </body>
 </html>
